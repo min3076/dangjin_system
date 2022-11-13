@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>로그인</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script src="./font/webfont.js"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper login">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div class="loginwrap type1">
+            <h2><span>휴대폰</span> 인증</h2>
+            <p>휴대폰으로 인증번호를 발급받아<br> 인증하는 방식입니다.</p>
+            <button type="button" class="btn btn-dark btn-lg">신청하기</button>
+        </div>
+        <div class="loginwrap type2">
+            <h2><span>행정전자서명</span> 인증</h2>
+            <p>행정전자서명 인증을 이용하여<br>본인여부를 인증하는 방식입니다.</p>
+            <button type="button" class="btn btn-dark btn-lg">신청하기</button>
+        </div>
+
+        <!-- [include] fooer -->
+        <div id="footer"></div>
+        <!-- //[include] fooer -->
+    </section>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>
+
+

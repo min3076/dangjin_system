@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>마이페이지</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script src="./font/webfont.js"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div class="titwrap tit5">
+            <h2 class="tit">마이페이지</h2> 
+            <p>휴직신청페이지입니다.<br>
+                휴직유형에 따라 정보를 기입해주세요</p>
+        </div>
+        <div class="rcon">
+            <!-- 휴직신청 -->
+            <div class="mb_30">
+                <h3>휴직신청 (육아/질병)</h3>
+                <table class="table table-hover center">
+                    <caption>휴직신청 목록 - 번호, 휴직사유, 휴직기간, 상태, 사유정보 제공 </caption>
+                    <colgroup>
+                    <col style="width:80px" />
+                    <col />
+                    <col style="width: 20%" />
+                    <col style="width: 10%" />
+                    <col />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">휴직사유</th>
+                        <th scope="col">휴직기간</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">사유</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td>2021.12.01 ~ 2022.12.01 </td>
+                        <td><span class="tag state_app_yes">승인</span></td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td>2021.12.01 ~ 2022.12.01 </td>
+                        <td><span class="tag state_app_ready">미승인</span></td>
+                        <td class="text-left"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- [include] pagenate -->
+                <div id="pagenate"></div>
+                <!-- //[include] pagenate -->
+            </div>
+            <!-- //휴직신청 -->
+
+            <!-- 복직신청 (육아/질병) -->
+            <div class="mb_30">
+                <h3>복직신청 (육아/질병)</h3>
+                <table class="table table-hover center">
+                    <caption>휴직신청 목록 - 번호, 휴직사유, 휴직기간, 상태, 사유정보 제공 </caption>
+                    <colgroup>
+                    <col style="width:80px" />
+                    <col />
+                    <col style="width: 20%" />
+                    <col style="width: 10%" />
+                    <col />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">휴직사유</th>
+                        <th scope="col">휴직기간</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">사유</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td>2021.12.01 ~ 2022.12.01 </td>
+                        <td><span class="tag state_app_yes">승인</span></td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td>2021.12.01 ~ 2022.12.01 </td>
+                        <td><span class="tag state_app_ready">미승인</span></td>
+                        <td class="text-left"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <!-- pagenate -->
+                <div class="pagenatewrap">
+                    <ul class="pagination pg-blue">
+                        <li class="bn first">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">첫번째페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn previous">
+                          <a href="#">
+                              <span class="sr-only">이전페이지</span>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a href="#" title="현재페이지" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#2" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">5</a>
+                        <li class="page-item">
+                          <a href="#" class="page-link">9</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">10</a>
+                        </li>
+                        <li class="bn next">
+                          <a href="#" class="page-link">
+                              <span>&gt;</span>
+                              <span class="sr-only">다음페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn last">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">마지막페이지</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // pagenate -->
+            </div>
+            <!-- //복직신청 (육아/질병) -->
+            
+            <!-- 복무현황 신고 -->
+            <div class="mb_30">
+                <h3>복무현황 신고</h3>
+                <table class="table table-hover center">
+                    <caption>휴직신청 목록 - 번호, 휴직사유, 휴직기간, 상태, 사유정보 제공 </caption>
+                    <colgroup>
+                    <col style="width:80px" />
+                    <col />
+                    <col style="width: 20%" />
+                    <col style="width: 10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">휴직사유</th>
+                        <th scope="col">휴직기간</th>
+                        <th scope="col">상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td>2021.12.01 ~ 2022.12.01 </td>
+                        <td><button type="button" class="btn btn-sm btn-outline-secondary">현황보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td>2021.12.01 ~ 2022.12.01 </td>
+                        <td><button type="button" class="btn btn-sm btn-outline-secondary">현황보기</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <!-- pagenate -->
+                <div class="pagenatewrap">
+                    <ul class="pagination pg-blue">
+                        <li class="bn first">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">첫번째페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn previous">
+                          <a href="#">
+                              <span class="sr-only">이전페이지</span>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a href="#" title="현재페이지" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#2" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">5</a>
+                        <li class="page-item">
+                          <a href="#" class="page-link">9</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">10</a>
+                        </li>
+                        <li class="bn next">
+                          <a href="#" class="page-link">
+                              <span>&gt;</span>
+                              <span class="sr-only">다음페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn last">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">마지막페이지</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // pagenate -->
+            </div>
+            <!-- //복무현황 신고 -->
+
+            
+            <!-- 온라인 상담 예약 -->
+            <div class="mb_30">
+                <h3>온라인 상담 예약</h3>
+                <table class="table table-hover center">
+                    <caption>휴직신청 목록 - 번호, 휴직사유, 휴직기간, 상태, 사유정보 제공 </caption>
+                    <colgroup>
+                    <col style="width:80px" />
+                    <col style="width: 20%" />
+                    <col />
+                    <col style="width: 10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">상담일자</th>
+                        <th scope="col">상담내용</th>
+                        <th scope="col">상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td><span class="tag state_app_yes">승인</span></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td class="text-left"></td>
+                        <td><span class="tag state_app_ready">미승인</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <!-- pagenate -->
+                <div class="pagenatewrap">
+                    <ul class="pagination pg-blue">
+                        <li class="bn first">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">첫번째페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn previous">
+                          <a href="#">
+                              <span class="sr-only">이전페이지</span>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a href="#" title="현재페이지" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#2" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">5</a>
+                        <li class="page-item">
+                          <a href="#" class="page-link">9</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">10</a>
+                        </li>
+                        <li class="bn next">
+                          <a href="#" class="page-link">
+                              <span>&gt;</span>
+                              <span class="sr-only">다음페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn last">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">마지막페이지</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // pagenate -->
+            </div>
+            <!-- //온라인 상담 예약 -->
+
+            
+            <!-- 온라인 상담 -->
+            <div class="mb_50">
+                <h3>온라인 상담</h3>
+                <table class="table table-hover center">
+                    <caption>온라인 상담 목록 - 번호, 글제목, 관리정보 제공 </caption>
+                    <colgroup>
+                    <col style="width:80px" />
+                    <col />
+                    <col style="width: 10%" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">글제목</th>
+                        <th scope="col">관리</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td><span class="tag state_ing">처리중</span></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"></td>
+                        <td><span class="tag state_end">답변완료</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- pagenate -->
+                <div class="pagenatewrap">
+                    <ul class="pagination pg-blue">
+                        <li class="bn first">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">첫번째페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn previous">
+                          <a href="#">
+                              <span class="sr-only">이전페이지</span>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a href="#" title="현재페이지" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#2" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">5</a>
+                        <li class="page-item">
+                          <a href="#" class="page-link">9</a>
+                        </li>
+                        <li class="page-item">
+                          <a href="#" class="page-link">10</a>
+                        </li>
+                        <li class="bn next">
+                          <a href="#" class="page-link">
+                              <span>&gt;</span>
+                              <span class="sr-only">다음페이지</span>
+                          </a>
+                        </li>
+                        <li class="bn last">
+                          <a href="#" class="page-link">
+                              <span class="sr-only">마지막페이지</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // pagenate -->
+            </div>
+            <!-- //온라인 상담 예약 -->
+            
+        </div>
+        <!-- [include] fooer -->
+        <div id="footer"></div>
+        <!-- //[include] fooer -->
+    </section>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>
+
+

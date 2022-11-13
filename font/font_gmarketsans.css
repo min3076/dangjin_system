@@ -1,0 +1,13 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'GmarketSansM';
+  src: url(../font/gmarketsans/GmarketSansM.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansB';
+  src :url(../font/gmarketsans/GmarketSansB.woff) format('woff');
+  font-weight: 600;
+  font-style: bold;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>3 복무상황 신고</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script src="./font/webfont.js"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+
+
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div class="titwrap tit4">
+            <h1 class="tit"><span>인사상담예약</span>예약신청</h1> 
+            <p>복무상황 신고페이지입니다.<br>
+             복무상황에 따라 정보를 기입해주세요</p>
+        </div>
+        <div class="rcon">
+            <div class="linebox_bott col2">
+                <div id="calendar"></div>
+                <div class="wrap">
+                    <h3><span>인사상담 장소</span> 지하1층 종합상담실</h3>
+                    <div class="input_row">
+                        <label for="input1_1" class="bar_title"><b>부서</b></label>
+                        <input type="text" id="input1_1"  class="box_input w100p">
+                    </div>
+                    <div class="input_row">
+                        <label for="input1_1" class="bar_title"><b>직급</b></label>
+                        <input type="text" id="input1_1"  class="box_input w100p">
+                    </div>
+                    <div class="input_row">
+                        <label for="input1_1" class="bar_title"><b>성명</b></label>
+                        <input type="text" id="input1_1"  class="box_input w100p">
+                    </div>
+                    <div class="input_row">
+                        <label for="input1_1" class="bar_title"><b>상담내용</b></label>
+                        <textarea type="text" id="input1_1"  class="boxarea w100p"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="btnwrap lg">
+                <button type="button" class="btn btn-primary btn-lg">신청하기</button>
+                <button type="button" class="btn btn-secondary btn-lg">취소</button>
+            </div>
+            </div>
+        </div>
+        <!-- [include] fooer -->
+        <div id="footer"></div>
+        <!-- //[include] fooer -->
+    </section>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>
+
+

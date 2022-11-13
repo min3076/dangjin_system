@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>1 휴직신청</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script src="./font/webfont.js"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div class="titwrap tit2">
+            <h2 class="tit">복직신청</h2> 
+            <p>휴직신청페이지입니다.<br>
+                휴직유형에 따라 정보를 기입해주세요</p>
+        </div>
+        <div class="rcon">
+            <h3>휴직유형</h3>
+            <div class="linebox_bott">
+                <div class="input_radio">
+                    <input type="radio" id="input1_1" name="input1_0"><label for="input1_1"><span></span>육아휴직</label>
+                    <input type="radio" id="input1_2" name="input1_0"><label for="input1_2"><span></span>질병휴직</label>
+                    <input type="radio" id="input1_3" name="input1_0"><label for="input1_3"><span></span>기타휴직</label>
+                </div>
+            </div>
+            <!-- 휴직유형 선택에 따른 폼요소 -->
+            <div>
+                <h3>소속 및 개인정보</h3>
+                <div class="linebox_bott">
+                    <div class="input_row inline_row">
+                        <label for="input1_1" class="bar_title"><b>부서</b></label>
+                        <input type="text" id="input1_1"  class="box_input w100p">
+                        <label for="input1_2" class="bar_title ml_50"><b>직급</b></label>
+                        <input type="text" id="input1_2"  class="box_input w100">
+                    </div>
+                    <div class="input_row inline_row">
+                        <label for="input1_3" class="bar_title"><b>성명</b></label>
+                        <input type="text" id="input1_3"  class="box_input">
+                    </div>
+                    <div class="input_row inline_row">
+                        <label for="input1_4" class="bar_title"><b>생년월일</b></label>
+                        <input type="text" id="input1_4"  class="box_input">
+                    </div>
+                </div>
+                <h3>참고내용</h3>
+                <div class="linebox_bott">
+                    <div class="input_row">
+                        <label for="input2_1" class="bar_title"><b>대상</b></label>
+                        <input type="text" id="input2_1"  class="box_input">
+                    </div>
+                    <div class="input_row f_align_a_top w100p additem">
+                        <strong class="bar_title">첨부서류<span class="sr-only">1</span></strong>
+                        <div class="wrap">
+                            <div class="item box_period all_w100p">
+                                <input class="box_input w100p">
+                                <label for="input2_2_1" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 1</span> 첨부</label> 
+                                <input type="file" id="input2_2_1">
+                            </div>  
+                            <div class="item box_period all_w100p">
+                                <input class="box_input w100p">
+                                <label for="input2_2_2_1" class="sr-only">참고자료2 삭제</label>
+                                <button type="button" id="input2_2_2_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                <label for="input2_2_2_2" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부</label> 
+                                <input type="file" id="input2_2_2_2">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <h3>신청기간</h3>
+                <div class="input_row">
+                    <strong class="bar_title">기간선택</strong>
+                    <div class="box_period">
+                        <label for="select3_1"><span class="sr-only">YYYYMM</span><span class="sr-only">기간선택 시작일</span></label>
+                        <input type="date" id="select3_1" class="expect_date input_select">
+                    <button class="btn_calendar" type="button"></button>
+                    </div> 
+                    <span class="space"> - </span>
+                    <div class="box_period">
+                        <label for="select3_2"><span class="sr-only">YYYYMM</span><span class="sr-only">기간선택 종료일</span></label>
+                        <input type="date" id="select3_2" class="expect_date input_select">
+                        <button class="btn_calendar" type="button"></button>
+                    </div>
+                    <label for="input3_3" class="sr-only">총 일수</label>
+                    <input type="text" id="input3_3"  class="box_input w60 ml_5">
+                    <span class="space">일</span>
+                </div>
+                <div class="btnwrap lg">
+                    <button type="button" class="btn btn-primary btn-lg">신청하기</button>
+                    <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                </div>
+                </div>
+            </div>
+            <!-- //휴직유형 선택에 따른 폼요소 -->
+        </div>
+        <!-- [include] fooer -->
+        <div id="footer"></div>
+        <!-- //[include] fooer -->
+    </section>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>
+
+
