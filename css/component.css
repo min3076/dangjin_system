@@ -176,6 +176,9 @@ textarea.boxarea{height:120px;padding:10px;border:2px solid #E8E8E8; box-sizing:
 .mb_45{margin-bottom:45px}
 .mb_50{margin-bottom:50px!important;}
 
+
+.padd_t_0{padding-top:0!important}
+
 .text-left{text-align:left!important}
 .text-right{text-align:right!important}
 .text-center{text-align:center!important}
@@ -258,7 +261,7 @@ textarea.boxarea{height:120px;padding:10px;border:2px solid #E8E8E8; box-sizing:
 
 /* calendar wrapper */
 .date_ctrl{display:flex;justify-content:center;align-items:center;width:100%;margin-bottom:50px;}
-.date_ctrl button{width:36px;height:36px;padding:0 7px;border-radius:100px;background-color:#333;}
+.date_ctrl button{width:36px;height:36px;padding:0 7px;border-radius:100px;background-color:#999;}
 .date_ctrl button .ico{display: block;width: 20px;height: 20px;background-size: 100% auto;background-repeat:no-repeat;}
 .date_ctrl .prev i{transform: rotate(-180deg);}
 .date_ctrl strong{display:inline-block;padding:0 10px;font-size:30px;font-weight:bold;line-height:1}
