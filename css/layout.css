@@ -21,9 +21,7 @@ h1.logo a {display:block;width:354px;height:47px;background: url(../images/commo
 .utill .bn.logout{padding:8px 20px;border:1px solid #C5C6CB;border-radius:20px;color:#fff}
 .utill .bn.logout span{width:24px;height:24px;background:url(../images/common/ico_out.svg);}
 
-
 .wrapper{position: relative;}
-
 .container{position:relative;min-height:100%;}
 .content_wrap{float:right;position:relative;width:calc(100% - 260px);min-height:100%;padding:4%;background:#fff;}
 

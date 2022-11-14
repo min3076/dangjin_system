@@ -31,6 +31,7 @@ section{margin-bottom:30px;}
 .wrap .tit{width:20%}
 .wrap .con{width:80%;display:flex;gap:10px;}
 .col{display:flex;flex-direction:column;}
+.noflex{display:block!important;}
  </style>
 
 </head>
@@ -51,7 +52,6 @@ section{margin-bottom:30px;}
     <div class="con">
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-outline-secondary">Secondary</button>
-      <button type="button" class="btn btn-outline-secondary"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
     </div>
   </div>
   <div class="wrapper wrap">
@@ -69,7 +69,7 @@ section{margin-bottom:30px;}
   </div>
   <div class="wrapper wrap">
     <div class="tit"><h2>size</h2></div>
-    <div class="con">
+    <div class="con noflex">
         <button type="button" class="btn btn-primary btn-lg">Button large</button>
         <button type="button" class="btn btn-primary btn-sm"> Button Small</button>
         <button type="button" class="btn btn-primary btn-block"> Button Block</button>
@@ -78,7 +78,7 @@ section{margin-bottom:30px;}
   <div class="wrapper wrap">
     <div class="tit"><h2>ico_Button</h2></div>
     <dis class="con">
-        <button type="button"  class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i> 첨부</label>
+        <button type="button"  class="btn btn-outline-dark ml_5"><i class="ico bi-plus mr_5"></i> 첨부</label>
         <button type="button"  class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
     </div>
   </div>   
@@ -196,9 +196,7 @@ section{margin-bottom:30px;}
   <div class="wrapper wrap">
     <div class="tit"><h2>Inputs</h2></div>
     <div class="con">
-      
       <input type="text" id="input73_3"  class="box_input">
-      <textarea id="input65_1"  class="boxarea"></textarea>
       <!-- select -->
       <select id="select4_6"  class="input_select">
         <option>select</option>
@@ -230,7 +228,7 @@ section{margin-bottom:30px;}
     <div class="tit"><h2>input text</h2></div>
     <div class="con col">  
       <div class="input_row info_w_auto">
-        <b class="bar_title">변경일자 </b>
+        <b class="bar_title">일자 </b>
         <span>2022-06-29</span>
       </div>
     </div>
@@ -239,11 +237,10 @@ section{margin-bottom:30px;}
   <div class="wrapper wrap">
     <div class="tit"><h2>select</h2></div>
     <div class="con col">
-
       <div class="input_row">
-        <label for="select4_6" class="bar_title">결과</label>
+        <label for="select4_6" class="bar_title">선택사항</label>
         <select id="select4_6"  class="input_select">
-          <option>적합</option>
+          <option>선택</option>
         </select>
       </div> 
     </div>
@@ -282,80 +279,48 @@ section{margin-bottom:30px;}
   <div class="wrapper wrap">
     <div class="tit"><h2>add/del</h2></div>
     <div class="con col">
-
-      <div class="additem">
-        <div class="item">
-            <div class="input_row w100p">
-                <label for="input79_1_1" class="bar_title"><b>위치</b></label>
-                <input type="text" id="input79_1_1" class="box_input w100p">
+      <div class="input_row f_align_a_top w100p additem">
+        <strong class="bar_title">휴직 실적</strong>
+        <div class="wrap">
+            <div class="item box_period all_w100p">
+                <input class="box_input w100p">
+                <label for="input2_4_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus"></i><span class="sr-only">참고자료 1 첨부</span> </label> 
+                <input type="file" id="input2_4_1">
+            </div>  
+            <div class="item box_period all_w100p">
+                <input class="box_input w100p">
+                <label for="input2_4_2" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus"></i><span class="sr-only">참고자료 1 첨부</span> </label> 
+                <input type="file" id="input2_4_2">
             </div>
-            <div class="input_row w100p">
-                <label for="input79_1_2" class="bar_title"><b>부위</b></label>
-                <input type="text" id="input79_1_2" class="box_input w100p">
-            </div>
-            <div class="input_row w100p">
-                <label for="input79_1_3" class="bar_title"><b>내용</b></label>
-                <input type="text" id="input79_1_3" class="box_input w100p">
-            </div>
-            <div class="input_row w100p">
-                <strong class="bar_title">첨부파일</strong>
-                <div class="box_period filewrap">
-                    <input placeholder="시방서.pdf" class="box_input w100p">
-                    <label for="input79_1_4_1" class="sr-only">참고자료 삭제</label>
-                    <button type="button" id="input79_1_4_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
-                    <label for="input79_1_4" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료</span> 첨부</label> 
-                    <input type="file" id="input79_1_4">
-                </div>
-            </div>
+            <div class="item box_period all_w100p">
+                <input class="box_input w100p">
+                <label for="input2_4_3" class="btn btn-outline-dark ml_5"><i class="ico bi-plus"></i><span class="sr-only">참고자료 1 첨부</span> </label> 
+                <input type="file" id="input2_4_3">
+            </div>  
         </div>
-        <div class="item minus_item">
-            <div class="input_row w100p">
-                <label for="input79_2_1" class="bar_title"><b>위치</b></label>
-                <input type="text" id="input79_2_1" class="box_input w100p">
-            </div>
-            <div class="input_row w100p">
-                <label for="input79_2_2" class="bar_title"><b>부위</b></label>
-                <input type="text" id="input79_2_2" class="box_input w100p">
-            </div>
-            <div class="input_row w100p">
-                <label for="input79_2_3" class="bar_title"><b>내용</b></label>
-                <input type="text" id="input79_2_3" class="box_input w100p">
-            </div>
-            <div class="input_row w100p">
-                <strong class="bar_title">첨부파일</strong>
-                <div class="box_period filewrap">
-                    <input placeholder="시방서.pdf" class="box_input w100p">
-                    <label for="input79_2_4_1" class="sr-only">참고자료 삭제</label>
-                    <button type="button" id="input79_2_4_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
-                    <label for="input79_2_4" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료</span> 첨부</label> 
-                    <input type="file" id="input79_2_4">
-                </div>
-            </div>
-            <button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
-        </div>
-        <button type="button" class="btn btn-dark addbtn"><i class="ico bi-plus-w mr_5"></i>추가</button>
-      </div>
+    </div>
+      
     </div>
   </div>
   <div class="wrapper wrap">
     <div class="tit"><h2>add file</h2></div>
     <div class="con col">
-      <div class="col">
-        <div class="box_period filewrap">
-            <input placeholder="사업자등록증 첨부파일2" class="box_input wide">
-            <label for="input11b_8_1_1" class="sr-only">사업자등록증 첨부파일2 삭제</label>
-            <button type="button" id="input11b_8_1_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
-            <!-- <label for="input11b_8_1" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">사업자등록증</span> 첨부</label>  -->
-            <input type="file" id="input11b_8_1">
+      <div class="input_row f_align_a_top w100p additem">
+        <strong class="bar_title">첨부서류<span class="sr-only">1</span></strong>
+        <div class="wrap">
+            <div class="item box_period all_w100p">
+                <input class="box_input w100p">
+                <label for="input2_2_1" class="btn btn-outline-dark ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 1</span> 첨부</label> 
+                <input type="file" id="input2_2_1">
+            </div>  
+            <div class="item box_period all_w100p">
+                <input class="box_input w100p">
+                <label for="input2_2_2_1" class="sr-only">참고자료2 삭제</label>
+                <button type="button" id="input2_2_2_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                <label for="input2_2_2_2" class="btn btn-outline-dark ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부</label> 
+                <input type="file" id="input2_2_2_2">
+            </div>  
         </div>
-        <div class="box_period filewrap">
-            <input placeholder="사업자등록증 첨부파일1" class="box_input wide">
-            <label for="input11b_8_2_1" class="sr-only">사업자등록증 첨부파일1 삭제</label>
-            <button type="button" id="input11b_8_2_1" class="btn btn-outline-secondary ml_5" ><i class="ico bi-minus mr_5"></i>삭제</button>
-            <label for="input11b_8_2" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">사업자등록증</span> 첨부</label> 
-            <input type="file" id="input11b_8_2">
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -365,7 +330,6 @@ section{margin-bottom:30px;}
   <div class="wrapper wrap">
     <div class="tit"><h2>btn wrap</h2></div>
     <div class="con col">
-      <h3>btn wrap lg</h3>
       <div class="btnwrap lg">
         <button type="button" class="btn btn-primary btn-lg">저장</button>
         <button type="button" class="btn btn-secondary btn-lg">취소</button>

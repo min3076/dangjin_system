@@ -1,11 +1,8 @@
 :root {
-  --blue: #007bff;
   --white: #fff;
-  --primary: #007bff;
+  --primary: #C2192E;
   --secondary: #A5AECA;
-  --success: #46CE9B;
-  --danger: #F66D6D;
-  --dark: #182869;
+  --dark: #4F4C4B;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -13,7 +10,7 @@
   --breakpoint-xl: 1200px;
 }
 
-.tx-gray-dark{color:#0F2248;}
+.tx-gray-dark{color:#4F4C4B;}
 .btn {
   display: inline-flex;
   align-items: center;
@@ -46,7 +43,7 @@
 .btn.focus,
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
 }
 .btn.disabled,
 .btn:disabled {
@@ -71,7 +68,7 @@ fieldset:disabled a.btn {
 }
 .btn-primary.focus,
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -83,13 +80,13 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  background-color: #C2192E;
+  border-color: #C2192E;
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
 }
 .btn-secondary {
   color: #4E4E4E;
@@ -153,7 +150,7 @@ fieldset:disabled a.btn {
 .btn-dark:not(:disabled):not(.disabled).active:focus,
 .btn-dark:not(:disabled):not(.disabled):active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(233, 0, 0, 0.5);
 }
 .btn-outline-primary {
   color: #C2192E;
@@ -185,10 +182,10 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
 }
 .btn-outline-secondary {
-  color: #929292;
+  color: #4E4E4E;
   background-color: #fff;
   background-image: none;
   border-color: #929292;
@@ -275,7 +272,7 @@ fieldset:disabled a.btn {
 }
 .btn-group-lg > .btn,
 .btn-lg {
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.6rem;
   line-height: 1.8;
   border-radius: 2rem;
 }
