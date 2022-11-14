@@ -53,10 +53,6 @@ textarea.boxarea{height:120px;padding:10px;border:2px solid #E8E8E8; box-sizing:
 .input_select::placeholder,
 .box_input::placeholder{color:#848484}
 
-.blue50{color:#0057FF!important;}
-.blue70{color:#182869!important;}
-.blue70p40{color:#A5AECA!important}
-.bg_blue70{background:#182869!important}
 
 .w40{width:40px;}
 .w60{width:60px;}
@@ -67,18 +63,12 @@ textarea.boxarea{height:120px;padding:10px;border:2px solid #E8E8E8; box-sizing:
 .w220{width:220px!important;}
 .w100p{width:100%;}
 
-.t-center {text-align:center}
 .f_align_a_top{align-items:flex-start!important}
 
 .ico{display:inline-block;text-indent:-999px;overflow:hidden;}
-
-.ico.bi-out{width:20px;height:20px;line-height:20px;background:url(../images/common/ico_out.svg) no-repeat;}
-.ico.bi-plus_big{width:15px;height:16px;line-height:20px;background:url(../images/common/ico_plus.svg) no-repeat;}
-.ico.bi-plus{width:13px;height:13px;line-height:20px;padding:11px 0;background:url(../images/common/ico_plus_sm.svg) no-repeat 50% 50%;}
-.ico.bi-plus-w{width:15px;height:15px;line-height:20px;background:url(../images/common/ico_plus_w.svg) no-repeat;}
-
-.btn:hover:hover .ico.bi-plus{background-image:url(../images/common/ico_plus_w.svg);}
-.btn:hover:hover .ico.bi-minus{background-image:url(../images/common/ico_minus_w.svg);}
+.ico.bi-plus{width:13px;height:13px;line-height:20px;padding:11px 0;background:url(../images/common/ico_plus.svg) no-repeat 50% 50%;}
+.btn:hover .ico.bi-plus{background-image:url(../images/common/ico_plus_w.svg);}
+.btn:hover .ico.bi-minus{background-image:url(../images/common/ico_minus_w.svg);}
 
 
 .ico.bi-blank_w{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_blank.svg) no-repeat;}

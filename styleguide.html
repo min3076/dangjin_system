@@ -17,9 +17,8 @@
     WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
 </script>
  <!-- include -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
- <script src="./js/include.js"></script>
- <script src="./js/tmpl.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="./js/include.js"></script>
  <!-- //include -->
  <style>
 h1{font-size:40px;font-weight:bold;color:#182869;font-family: 'mont';}
@@ -45,9 +44,6 @@ section{margin-bottom:30px;}
       <div class="con">
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-outline-primary">Primary</button>
-        <button type="button" class="btn btn-outline-primary"><i class="ico bi-search mr_5"></i>Primary</button>
-        <button type="button" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i>Primary</button>
-        <button type="button" class="btn btn-outline-primary"><i class="ico bi-minus mr_5"></i>Primary</button>
       </div>
   </div>
   <div class="wrapper wrap">
@@ -55,7 +51,6 @@ section{margin-bottom:30px;}
     <div class="con">
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-outline-secondary">Secondary</button>
-      <button type="button" class="btn btn-link">관통슬리브-1.jpg<i class="ico bi-search-sir ml_5"></i></button>
       <button type="button" class="btn btn-outline-secondary"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
     </div>
   </div>
@@ -83,34 +78,8 @@ section{margin-bottom:30px;}
   <div class="wrapper wrap">
     <div class="tit"><h2>ico_Button</h2></div>
     <dis class="con">
-      <div style="display:block">
-        <i class="ico bi-out"></i>
-        <i class="ico bi-plus_big"></i>  
-        <i class="ico bi-plus"></i> 
-        <i class="ico bi-del-red_sm"></i><span class="sr-only">삭제</span>
-        <i class="ico bi-qs ml_5"></i>
-        <button type="button"><i class="ico bi-print">프린트</i></button>
-        <button type="button"><i class="ico bi-hwp">hwp파일</i></button>
-        <button type="button"><i class="ico bi-pdf">pdf파일</i></button>
-        <button type="button"><i class="ico bi-doc">doc파일</i></button>
-
-        <button type="button" class="btn btn-dark"><i class="ico bi-plus-w mr5"></i>추가</button>
-        
-        <button type="submit" class="btn btn-primary"><i class="ico bi-search_w mr5"></i>검색</button>
-        
-        <button type="button" class="btn btn-outline-secondary"><i class="ico bi-search_g mr5"></i>조회</button>
-        <button type="button" class="btn btn-link"><i class="ico bi-search-sir mr_5"></i>Viewer</button>
-        
-        <button type="button" class="btn btn-outline-secondary"><i class="ico bi-minus mr5"></i>삭제</button>
-        <button type="button" class="btn btn-link">도면보기<i class="ico bi-arr ml_5"></i></button>
-
-        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml_5"></i></button>
-
-        <label for="reflash" class="blue50">자동새로고침<i class="ico refreshify ml_5"></i></label>
-        <button type="button" class="btn btn-dark btn-lg"><i class="ico bi-plus mr5"></i>프로젝트 추가<i class="ico bi-blank_w"></i></button>
-      
-
-        </div>
+        <button type="button"  class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i> 첨부</label>
+        <button type="button"  class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
     </div>
   </div>   
 </section>
@@ -218,95 +187,7 @@ section{margin-bottom:30px;}
       </table>
     </div>
   </div>
-  <div class="wrapper wrap">
-    <div class="tit"><h2>table-border</h2></div>
-    <div class="con">
-      <table class="table table-border">
-        <caption>자재승인형황 검색결과 목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수정보 제공</caption>
-        <colgroup>
-          <col style="width: 10%" />
-          <col />
-          <col style="width: 20%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th scope="col">번호</th>
-            <th scope="col">제목</th>
-            <th scope="col">작성자</th>
-            <th scope="col">파일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">조회수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="2">1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="wrapper wrap">
-    <div class="tit"><h2>dataTable</h2></div>
-    <div class="con">
 
-      <table class="table dataTable">
-        <colgroup>
-          <col style="width: 10%" />
-          <col />
-          <col style="width: 20%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-          <col style="width: 10%" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th scope="col">번호</th>
-            <th scope="col">제목</th>
-            <th scope="col">작성자</th>
-            <th scope="col">파일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">작성일</th>
-            <th scope="col">조회수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="2">1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 </section>
 
 <section>
@@ -510,50 +391,15 @@ section{margin-bottom:30px;}
       <div style="display:block;">
         <i class="ico state_yes">완료</i>
         <i class="ico state_none">미완료</i>
-        <span class="tag state_yes"><i class="ico state_yes"></i>적합</span>
+        <span class="tag state_yes"><i class="ico state_yes"></i>완료</span>
         <span class="tag state_ing">검토중</span>
         <span class="tag state_end">검토완료</span>
         <span class="tag state_app_ready">승인대기</span>
         <span class="tag state_app_yes">승인</span>
-        <span class="tag state_app_no">FATAL</span>
-        <span class="tag state_off">대기</span>
-        <span class="tag state_on">현장</span>
       </div>
     </div>
 </div>
 </section>
-  
 
-
-<section>
-  <div class="titwrap"><h1>Tab</h1></div>
-  <div class="wrapper wrap">
-    <div class="tit"><h2>text tab</h2></div>
-    <div class="con">
-
-      <div class="tabwrap" id="tab">
-        <div class="tab-nav">
-            <a href="#tab1_1" class="tab-nav_link active"><span>전체</span></a>
-            <a href="#tab1_2" class="tab-nav_link event"><span>준비</span></a>
-            <a href="#tab1_3" class="tab-nav_link event"><span>진행</span></a>
-            <a href="#tab1_4" class="tab-nav_link event"><span>완료</span></a>
-        </div>
-          <div class="tab-body active" id="tab1_1">
-            탭1
-          </div>
-          <div class="tab-body" id="tab1_2">
-              탭2
-          </div>
-          <div class="tab-body" id="tab1_3">
-              탭3
-          </div>
-          <div class="tab-body" id="tab1_4">
-              탭4
-          </div>
-      </div>
-
-    </div>
-  </div>
-  </section>
 </body>
 </html>
