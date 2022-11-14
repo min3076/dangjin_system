@@ -276,36 +276,6 @@ textarea.boxarea{height:120px;padding:10px;border:2px solid #E8E8E8; box-sizing:
 .table-secondary,
 .table-secondary>td,
 .table-secondary>th{background-color:#dddfe2}
-/* table-hover tr-secondary */
-.table-hover .table-secondary:hover,
-.table-hover .table-secondary:hover>td,
-.table-hover .table-secondary:hover>th{background-color:#cfd2d6}
-/* table-hover  tr-success */
-.table-hover .table-success:hover,
-.table-hover .table-success:hover>td,
-.table-hover .table-success:hover>th{background-color:#b1dfbb}
-/* table-hover  tr-info */
-.table-hover .table-info:hover,
-.table-hover .table-info:hover>td,
-.table-hover .table-info:hover>th{background-color:#abdde5}
-/* table-hover  tr-warning */
-.table-hover .table-warning:hover,
-.table-hover .table-warning:hover>td,
-.table-hover .table-warning:hover>th{background-color:#ffe8a1}
-/* table-hover  tr-danger */
-.table-hover .table-danger,
-.table-hover .table-danger:hover,
-.table-hover .table-danger:hover>td,
-.table-hover .table-danger:hover>th{background-color:#FDE2E2}
-/* table-hover  tr-light */
-.table-hover .table-light:hover,
-.table-hover .table-light:hover>td,
-.table-hover .table-light:hover>th{background-color:#ececf6}
-/* table-hover  tr-dark */
-.table-hover .table-dark:hover,
-.table-hover .table-dark:hover>td,
-.table-hover .table-dark:hover>th{background-color:#b9bbbe}
-/* table-hover  tr-active */
 .table-hover .table-active:hover,
 .table-hover .table-active:hover>td,
 .table-hover .table-active:hover>th{background-color:rgba(0,0,0,.075)}
