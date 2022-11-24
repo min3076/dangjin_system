@@ -21,18 +21,23 @@
     .main .tit *{font-size:3.2rem;}
 }
 @media screen and (max-width:768px){
-    .main .tit *{line-height:1.3;display: flex;flex-wrap: wrap;align-items: center;flex-direction: column;justify-content: center;font-size:2.8rem;}
+    .main:after{background-size: 98% auto;}
+    .main .tit *{line-height:1.3;display: flex;flex-wrap: wrap;align-items: center;flex-direction: column;justify-content: center;}
     .main .tit{margin-top:0}
     .main .tit b{height:44px;}
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:767px){
     .main {height:auto;background-size: auto 124%;background-position: 78% 100%;}
     .main .container{height:auto;padding-top:10%;}
+    .main .tit *{font-size:2.8rem;}
+}
+@media screen and (max-width:360px){
     .main .tit *{font-size:1.6rem;flex-direction:row}
     .main .tit b{height:36px;background-position:center;}
+    .main .tit span{margin-left:4px;}
+    .main:after{display:none;}
 }
-
 .main .menuwrap{display:flex;gap:30px;padding-bottom:20px;text-align:center;margin:20px 0;z-index:1;}
 .main .menuwrap a{display:flex;flex-direction:column;font-family: 'GmarketSansB';}
 .main .menuwrap a .bnico{display:block;width:160px;height:160px;background:red;border-radius:30px;}
@@ -92,7 +97,7 @@
 #footer{position:fixed;left:10%;bottom:50px;z-index:999;}
 #footer p{font-family: 'GmarketSansM';font-size:12px;color:#616161;}
 
-@media screen and (max-width:640px){
+@media screen and (max-width:767px){
     #footer{position:static;padding-bottom:30px;}
-    #footerd p{font-size:0.6em}
+    #footer p{font-size:0.6em;text-align:center;}
 }
