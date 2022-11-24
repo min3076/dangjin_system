@@ -28,8 +28,8 @@
 }
 
 @media screen and (max-width:767px){
-    .main {height:auto;background-size: auto 148%;background-position: 76% 68%;}
-    .main .container{height:auto;padding-top:10%;}
+    .main {height:auto;background-size: auto 148%;background-position:76% 34%;}
+    .main .container{height:auto;padding-top:18%;}
     .main .tit *{font-size:2.8rem;}
 }
 @media screen and (max-width:480px){
@@ -98,6 +98,6 @@
 #footer p{font-family: 'GmarketSansM';font-size:12px;color:#616161;}
 
 @media screen and (max-width:767px){
-    #footer{position:static;padding-bottom:30px;}
-    #footer p{font-size:0.6em;text-align:center;}
+    #footer{position:static;padding-bottom:10px;}
+    #footer p{margin-right:-20px;font-size:0.5em;text-align:right;}
 }
