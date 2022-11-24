@@ -31,9 +31,10 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media screen and (prefers-reduced-motion: reduce) {
-  .btn {
-    transition: none;
-  }
+  .btn {transition: none;}
+}
+@media screen and (max-width:640px){
+  .btn{font-size:0.8rem}
 }
 .btn.bold{font-weight:bold;}
 .btn:focus,
