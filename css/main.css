@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width:767px){
-    .main {height:auto;background-size: auto 124%;background-position: 78% 100%;}
+    .main {height:auto;background-size: auto 148%;background-position: 76% 68%;}
     .main .container{height:auto;padding-top:10%;}
     .main .tit *{font-size:2.8rem;}
 }
