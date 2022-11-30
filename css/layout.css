@@ -62,14 +62,14 @@ html, body, .wrapper{min-height:100%;}
 @media screen and (max-width:1279px){
     #header .pc-gnb{display:none;}
     #mobile-gnb__btn{display:block}
-    .mobile-gnb__global{margin-top:20px;margin-bottom:26px;}
-    .mobile-gnb .utill .bn.logout{margin-bottom:28px;}
+    .mobile-gnb__global{margin:20px 16px 26px;}
+    .mobile-gnb .utill .bn.logout{margin-left:10px;margin-bottom:28px;padding:8px 0;border:0}
     .mobile-gnb .utill .user_info:before,
     .mobile-gnb .utill .user_info b,
     .mobile-gnb .utill .user_info em{display:block;}
     .mobile-gnb .utill {flex-direction:column;align-items:flex-start;}
     .mobile-gnb .utill .user_info:before{position:absolute;top:0;left:6px;width:30px;height:30px;background-size:100%}
-    .mobile-gnb .utill .user_info{position:relative;width:100%;padding:36px 0 10px;flex-wrap:wrap;justify-content:flex-start;}
+    .mobile-gnb .utill .user_info{position:relative;width:100%;padding:36px 0 0;flex-wrap:wrap;justify-content:flex-start;}
     .mobile-gnb .utill .user_info .mypage{margin-left:0;padding:4px 10px;}
 }
 
