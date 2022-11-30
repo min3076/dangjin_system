@@ -62,7 +62,7 @@ html, body, .wrapper{min-height:100%;}
     #header .pc-gnb{display:none;}
     #mobile-gnb__btn{display:block}
     .mobile-gnb__global{margin:20px 16px 26px;}
-    .mobile-gnb .utill .bn.logout{margin-left:10px;margin-bottom:28px;padding:8px 0;border:0}
+    .mobile-gnb .utill .bn.logout{margin-left:8px;margin-bottom:28px;padding:8px 0;border:0}
     .mobile-gnb .utill .user_info:before,
     .mobile-gnb .utill .user_info b,
     .mobile-gnb .utill .user_info em{display:block;}
