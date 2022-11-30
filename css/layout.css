@@ -124,3 +124,16 @@ html, body, .wrapper{min-height:100%;}
     .container .titwrap .tit span{display:none;position: absolute;top:0;left:160px;font-size:1.4rem;}
     input[type="date"]{width:100px;}
 }
+
+@media screen and (max-width:640px){
+    .container .titwrap{height:180px;}
+    .container .titwrap .tit{font-size: 1.4rem;}
+    .container .titwrap .tit:before{height:40px;}
+    .container .titwrap.tit1 .tit:before,
+    .container .titwrap.tit2 .tit:before,
+    .container .titwrap.tit3 .tit:before,
+    .container .titwrap.tit4 .tit:before,
+    .container .titwrap.tit5 .tit:before{width:60px;}
+    .container .rcon{padding-top: 40px;;}
+
+}
