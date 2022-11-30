@@ -389,8 +389,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 
 /* login */
 .login .container{display:flex;justify-content:center;gap:20px;height:100vh;padding:200px 0;background:#E7E7E7 url(../images/common/bg_login.svg) no-repeat 100% 100%;}
-.loginwrap{display:flex;flex-direction:column;align-items:center;gap:50px;min-width:480px;padding:100px 0 120px;background:#fff;border-radius:10px;padding:5%;transition:all 0.4s;}
-.loginwrap h2{font-size:28px;font-family:'GmarketSansB';}
+.loginwrap{display:flex;flex-direction:column;align-items:center;gap:50px;min-width:480px;padding:100px 5% 120px;background:#fff;border-radius:10px;transition:all 0.4s;}
+.loginwrap h2{font-size:28px;font-family:'GmarketSansB';text-align:center}
 .loginwrap h2 span{color:#C2192E;font-family:'GmarketSansB';}
 .loginwrap h2:before{content:"";display:block;width:100%;height:120px;margin-bottom:30px;background:url(../images/common/ico_login1.svg) no-repeat 50% 0}
 .loginwrap.type2 h2:before{background-image:url(../images/common/ico_login2.svg);}
@@ -415,3 +415,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 .calwrap .wrap{width:62%;}
 .calwrap .wrap h3{font-size:20px;}
 .calwrap .wrap h3 span{margin-right:10px;padding:4px 12px;border:1px solid #777;border-radius:50px;font-size:15px}
+
+
+
+@media screen and (max-width:1024px){
+    .calwrap{flex-direction:column;gap:80px;}
+    .calwrap #calendar,
+    .calwrap .wrap{width:100%;}
+}
+
+@media screen and (max-width:768px){
+    .input_row,
+    .linebox_bott .input_row.inline_row input{flex-wrap: wrap;}
+    .input_row .bar_title{min-width:100%;width:100%;margin-left:0!important;margin-bottom:4px;margin-top:8px;}
+    .w100{width:100%;}
+    .login .container{flex-direction:column;height:100%;padding:100px 24px 0px;}
+    .loginwrap{min-width:100%;padding:50px 5% 40px;gap:20px;}
+    .loginwrap h2{font-size: 1.2rem;}
+    .loginwrap h2:before{height:80px;margin-bottom:20px;background-size:auto 100%;}
+   
+}

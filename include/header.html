@@ -2,16 +2,191 @@
 <h1 class="logo">
     <a href="#"><span class="sr-only">당진시 인사소통마당 온라인시스템</span></a>
 </h1>
-<div class="gnb">
-    <a href="#" class="selected">휴직신청</a>
-    <a href="#">복직신청</a>
-    <a href="#">복무상황신고</a>
-    <a href="#">인사상담예약</a>
-</div>
-<div class="utill">
-    <div class="user_info">
-        <b>홍길동님</b>, 안녕하세요! 
-        <a href="#" class="bn mypage">MYPAGE<span></span></a>
+<div class="pc-gnb">
+    <div class="gnb">
+        <a href="#" class="selected">휴직신청</a>
+        <a href="#">복직신청</a>
+        <a href="#">복무상황신고</a>
+        <a href="#">인사상담예약</a>
     </div>
-    <a href="#" class="bn logout"><span></span>로그아웃</a>
+    <div class="utill">
+        <div class="user_info">
+            <b>홍길동님</b><em>, 안녕하세요! </em>
+            <a href="#" class="bn mypage">MYPAGE<span></span></a>
+        </div>
+        <a href="#" class="bn logout"><span></span>로그아웃</a>
+    </div>
 </div>
+
+    <!-- MOBILE MENU :: Start -->
+
+    <button id="mobile-gnb__btn" class="header__sitemap">
+        <span class="sr-only">모바일메뉴 열기</span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+    <div class="mobile-gnb">
+        <button class="mobile-gnb__close">
+            <span class="sr-only">메뉴 닫기</span>
+        </button>
+        <div class="mobile-gnb__global utill">
+            <a href="#" class="bn logout"><span></span>로그아웃</a>
+            <div class="user_info">
+                <b>홍길동님,</b><em> 안녕하세요! </em>
+                <a href="#" class="bn mypage">MYPAGE<span></span></a>
+            </div>
+        </div>
+        <ul class="mobile-gnb__depth1">
+	        
+            <li class="depth1-item ">
+                <a href="#">휴직신청</a>
+            </li>
+            <li class="depth1-item ">
+                <a href="#">복직신청</a>
+            </li>
+            <li class="depth1-item">
+                <a href="#">복무상황신고</a>
+            </li>
+            <li class="depth1-item">
+                <a href="#" >인사상담예약</a>
+                <ul class="depth2">
+                    <li class="depth2__item"><a href="#" target="_self" >온라인예약</a>
+                    <li class="depth2__item"><a href="#" target="_self" >온라인상담</a>
+                </ul>
+            </li>
+        </li>
+        </ul>
+    </div>
+    <!-- // MOBILE MENU :: End -->
+
+
+
+<script>
+    function gnb_open(param,btn,index1,index2,index3,dur,meth,mno){
+        var param = $(param);
+        var btn = $(btn);
+        var index1 = index1-1;
+        var index2 = index2;
+        var index3 = index3;
+        var n = index1;
+        var w = param.outerWidth(true);
+        var data = false;
+    
+        param.find(".depth2").hide();
+    
+        var _open = function(){
+            $("html,body").css({"overflow":"hidden","height":$(window).height()});
+            param.show().css({opacity:1,height:$(window).height()}).animate({right:0});
+            param.find(".depth3").hide();
+    
+            if(!isNaN(index1)){
+                param.stop(true,true).delay(dur/2)
+                    .animate({scrollTop:param.find(".depth1-item > a").eq(index1).offset().top},dur,meth);
+    
+                var tobj2 = param.find(".depth1-item > a").eq(index1).next().find(">li").eq(index2);
+                tobj2.children().addClass("active");
+    
+                var tobj3 = tobj2.find(".depth3");
+                if(tobj3.is($(".depth3"))){
+                    tobj3.find("a").eq(index3).addClass("active");
+                    param.stop(true,true).delay(dur).animate({scrollTop:tobj3.parent().offset().top},dur,meth,function(){
+                        tobj3.slideDown(150);
+                    });
+                }
+            }
+    
+            data = true;
+    
+        };
+    
+        var _close = function(){
+            $("html,body").removeAttr("style");
+            param.stop(true,true).css({opacity:1,height:$(window).height()}).animate({scrollTop:0,right: -w},0,meth);
+        };
+    
+        btn.on("touchend click",function(event){
+            _open();
+            
+            $(window).resize(function(){
+                _close();
+            });
+    
+            event.preventDefault();
+        });
+    
+        param.find("a").on("click",function(event){
+            if(param.is(":animated") && param.find(":animated").size()){ return false; }
+        });
+    
+        // 터치 아웃 영역
+        $(".mobile-gnb__close").on("touchend click",function(event){
+            _close();
+        });
+    
+        // 트리메뉴 컨트롤
+        if(!isNaN(index1)){
+            param.find(".depth1-item > a").not(index1).next().hide().eq(index1).show().prev().addClass("active");
+        }
+    
+        param.find(".depth1-item > a").on("click",function(event){
+            n = $(this).parent().index();
+    
+            if($(this).next().css("display") == "block"){
+                param.find(".depth1-item > a").not(n).removeClass("active").next().stop(true,true).delay(150).slideUp(150);
+            }
+    
+            if($(this).next().css("display") == "none"){
+                param.find(".depth1-item > a").not(n).removeClass("active").next().stop(true,true).delay(150).slideUp(150);
+                param.find(".depth1-item > a").eq(n).addClass("active").next().stop(true,true).slideDown(150);
+            }
+    
+            event.preventDefault();
+        });
+    
+        param.find(".depth2>li>a").on("click",function(event){
+            var t = $(this);
+    
+            if(t.next().attr("class").match("depth3")){
+                if(t.next().css("display") != "block"){
+                    t.addClass("active");
+                    t.next().slideDown(150);
+                }else{
+                    t.removeClass("active");
+                    t.next().slideUp(150);
+                }
+    
+                event.preventDefault();
+            }
+        });
+    
+    }
+    
+    
+    (function(){
+        
+        var ismain = "";
+        var code2 = 0;
+        var code3 = 0;
+    
+        if(ismain != ""){
+            code2 = $("a[data-thiscode='"+ismain.substr(0,4)+"']").parent().index();
+            code3 = $("a[data-thiscode='"+ismain.substr(0,6)+"']").parent().index();
+        }
+        console.log(ismain);
+        console.log(code2);
+        console.log(code3);
+        
+        var param = ".mobile-gnb";
+        var btn = "#mobile-gnb__btn";
+        var index1 = "nu"; // th1 메뉴코드, index로 사용
+        var index2 = code2; // th1 메뉴코드, index로 사용
+        var index3 = code3; // th1 메뉴코드, index로 사용
+        var dur = 300; // 애니메이션 진행 속도
+        var meth = "easeOutExpo"; // 애니메이션 진행 타입
+    
+        gnb_open(param,btn,index1,index2,index3,dur,meth,ismain);
+    
+    }());
+    
+    </script>
