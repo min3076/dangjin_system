@@ -387,6 +387,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 .linebox_bott .input_row .col{display:flex;flex-direction:column;width:100%}
 
 
+/* login */
+.login .container{display:flex;justify-content:center;gap:20px;height:100vh;padding:200px 0;background:#E7E7E7 url(../images/common/bg_login.svg) no-repeat 100% 100%;}
+.loginwrap{display:flex;flex-direction:column;align-items:center;gap:50px;min-width:480px;padding:100px 5% 120px;background:#fff;border-radius:10px;transition:all 0.4s;}
+.loginwrap h2{font-size:28px;font-family:'GmarketSansB';text-align:center}
+.loginwrap h2 span{color:#C2192E;font-family:'GmarketSansB';}
+.loginwrap h2:before{content:"";display:block;width:100%;height:120px;margin-bottom:30px;background:url(../images/common/ico_login1.svg) no-repeat 50% 0}
+.loginwrap.type2 h2:before{background-image:url(../images/common/ico_login2.svg);}
+.loginwrap p{text-align:center;}
+.loginwrap button{padding-left:64px;padding-right:64px;}
+
+.loginwrap:hover{box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);}
+.loginwrap:hover h2:before{animation:icomove 1s infinite linear;transition:all 0.5s;}
+
+@keyframes icomove{
+    0%,100%{
+        transform:translate(0,0);
+    }
+    50%{
+        transform:translate(0,-5%);
+    }
+}
 
 
 .calwrap{display:flex;gap:5%;}
@@ -408,52 +429,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
     .linebox_bott .input_row.inline_row input{flex-wrap: wrap;}
     .input_row .bar_title{min-width:100%;width:100%;margin-left:0!important;margin-bottom:4px;margin-top:8px;}
     .w100{width:100%;}
-}
-
-
-
-.holds-terms{margin-bottom:40px;}
-.holds-terms .terms-content {padding:30px;margin-top:20px;width:100%;height:260px;overflow:hidden;overflow-y:auto;border: 1px solid #ddd;background-color:#fff;}
-.holds-terms .h-group {display:inline-block;white-space:nowrap;}
-.holds-terms .holds-cbox {width:20px;height:20px;margin:0 8px 0 0;border: 1px solid #ddd;}
-.holds-terms .holds-cbox .label {width:auto;height:auto;font-size:14px;white-space:normal;}
-
-.ui-box {margin-bottom:10px;padding:20px;background-color:#fafafa}
-.uit3{position:relative;margin-bottom:80px;overflow:hidden}
-.uit3 .inner_normal{position:relative;padding:4%;background:#fbfbfb;}
-.uit3 strong{display:block;margin:0;margin-bottom:15px;color:#121212;font-size:24px;font-weight:600;}
-.uit3 .txtwrap p{margin:0;color:#545454;font-size:14px;line-height:135%;font-weight:normal;}
-
-.txt-tip {color:#da4453}
-
-/* login */
-.login .container .rcon{padding-bottom:80px;}
-.loginwrap{display:flex;align-items:center;justify-content:space-between;gap:50px;padding:4%;border:10px solid #ddd;}
-.loginwrap div{position:relative;padding-left:100px;}
-.loginwrap h2{font-size:28px;font-family:'GmarketSansB';}
-.loginwrap h2 span{color:#C2192E;font-family:'GmarketSansB';}
-.loginwrap h2:before{content:"";display:block;position:absolute;left:0;top:0;width:68px;height:80px;margin-bottom:30px;background:url(../images/common/ico_login1.svg) no-repeat 50% 0 / 100% auto}
-.loginwrap button{padding-left:64px;padding-right:64px;}
-
-/* .loginwrap:hover{box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);}
-.loginwrap:hover h2:before{animation:icomove 1s infinite linear;transition:all 0.5s;} */
-
-@keyframes icomove{
-    0%,100%{
-        transform:translate(0,0);
-    }
-    50%{
-        transform:translate(0,-5%);
-    }
-}
-
-@media screen and (max-width:768px){
-    .loginwrap h2{font-size:22px;}
-}
-
-@media screen and (max-width:640px){
-    .loginwrap{flex-direction:column;padding:8% 4%;}
-    .loginwrap div{padding-left:0;text-align:center;}
-    .loginwrap h2{padding-top:100px;}
-    .loginwrap h2:before{left:50%;margin-left:-34px;}
+    .login .container{flex-direction:column;height:100%;padding:100px 24px 0px;}
+    .loginwrap{min-width:100%;padding:50px 5% 40px;gap:20px;}
+    .loginwrap h2{font-size: 1.2rem;}
+    .loginwrap h2:before{height:80px;margin-bottom:20px;background-size:auto 100%;}
+   
 }
